@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  melody:
+    build:
+      context: .
+    ports:
+      - "5566:5566"
+

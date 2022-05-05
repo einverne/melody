@@ -5,5 +5,6 @@ WORKDIR /melody
 COPY . /melody
 RUN node init.js
 EXPOSE 5566
+VOLUME ['/melody/backend/.profile/']
 CMD exec node backend/src/index.js
 

@@ -4,6 +4,8 @@ services:
   melody:
     build:
       context: .
+    restart: always
     ports:
       - "5566:5566"
-
+    volumes:
+      - ./backend/.profile:/melody/backend/.profile
